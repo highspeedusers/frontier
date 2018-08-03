@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="force_torque_estimator1" type="force_torque_estimator1" name="force_torque_estimator1" output="screen" respawn="true" >
+	<param name="initial_angle_deg" value="0" />
+	<param name="wheel_offset" value="-25.65392" />
+	<!-- <rosparam param="offset" > [-0.4094, -4.6616, 3.48478, 0.024406, 0.0242785, -0.105618] </rosparam> -->
+	<rosparam param="offset" > [-0.099, -3.7024, 2.5324, 0.08943, 0.12938, -0.08623] </rosparam>
+	<remap from="/force_torque1" to="/force_torque_estimator1/force_torque"/>
+  </node>
+</launch>
