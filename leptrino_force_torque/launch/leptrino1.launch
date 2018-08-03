@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="leptrino_force_torque" type="leptrino_force_torque" name="leptrino_force_torque1" output="screen" respawn="true">
+  	<param name="com_port" value="/dev/ttyACMleptrino1" />
+  	<param name="rate" value="50" />
+  </node>
+</launch>  
+ 
